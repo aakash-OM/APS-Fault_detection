@@ -20,7 +20,7 @@ PyYAML
 numpy
 scikit-learn
 apache-airflow
--e . ''' # this '-e' triggers setup.py file ; it is important when u want to import source code as Liberary.
-     '''# '.' means current directory & '-e' means editable installation(i.e, we can modify our code & install it.)
-     ''''#through -e . we are relealeasing our version 0.0.1
-     '''#basically we want to install sensor as a liberary'''
+-e . # this '-e' triggers setup.py file ; it is important when u want to import source code as Liberary.
+     # '.' means current directory & '-e' means editable installation(i.e, we can modify our code & install it.)
+     #through -e . we are relealeasing our version 0.0.1
+     #basically we want to install sensor as a liberary'''
