@@ -4,9 +4,9 @@ from setuptools import find_packages,setup
 from typing import List
 
 REQUIREMENT_FILE_NAME="requirements.txt"
-HYPHEN_E_DOT = "-e ."
+HYPHEN_E_DOT = "-e ." #we added this to trigger setup.py file
 
-def get_requirements()->List[str]:
+def get_requirements()->List[str]: # -> :this function is going to return a list which will contain strings
     
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
         requirement_list = requirement_file.readlines()
@@ -20,10 +20,9 @@ def get_requirements()->List[str]:
 
 setup(
     name="sensor",
-    version="0.0.1",
+    version="0.0.2",
     author="Aakash",
     author_email="aakashmittal0207@gmail.com",
     packages = find_packages(),  #this find_packages search for Python source code wherever it finds that code it will convert into packages.
-    install_requires = get_requirements(),
+    install_requires = get_requirements()
 ) 
-
