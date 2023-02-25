@@ -33,7 +33,7 @@ class DataIngestionConfig:
         except Exception  as e:
             raise SensorException(e,sys)     
 
-    def to_dict(self,)->dict:
+    def to_dict(self,)->dict: #convert dataset in the form of dictionary inside data ingestion.
         try:
             return self.__dict__
         except Exception  as e:
@@ -78,4 +78,4 @@ class ModelPusherConfig:
         self.pusher_model_path = os.path.join(self.pusher_model_dir,MODEL_FILE_NAME)
         self.pusher_transformer_path = os.path.join(self.pusher_model_dir,TRANSFORMER_OBJECT_FILE_NAME)
         self.pusher_target_encoder_path = os.path.join(self.pusher_model_dir,TARGET_ENCODER_OBJECT_FILE_NAME)
-Footer
+        
